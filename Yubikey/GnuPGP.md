@@ -368,5 +368,9 @@ Now we need to edit .bash_profile to start gpg-agent.
 gpgconf --launch gpg-agent
 export SSH_AUTH_SOCK=~/.gnupg/S.gpg-agent.ssh
 ```
+Extract your public key to upload via
+``` BASH
+ssh-add -L
+```
 
-Lastly there is a [script](restart_gpg.sh) to run in the event the agent isn't behaving correctly. 
+Lastly there is a [script](restart_gpg.sh) to run in the event the agent isn't behaving correctly.
